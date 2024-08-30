@@ -28,7 +28,42 @@ from qdrant_client import QdrantClient
 from qdrant_client.http.models import Distance, VectorParams
 from tqdm import tqdm
 
+from collections import defaultdict
+from datetime import datetime
+
+
 load_dotenv("../.env")
+
+
+def get_stored_result(path:str, type:Literal["json","csv"]):
+    # Check if the path is valid
+    if not os.path.exists(path):
+        return None 
+    if type == "json":
+        with open(path, 'r') as f:
+            data = json.load(f)
+        return data
+    elif type == "csv":
+        with open(path, 'r') as f:
+            data = json.load(f)
+        return data
+    else:
+        return None 
+    
+def save_result(result, path:str, type:Literal["json","csv"]):
+    if type == "json":
+        with open(path, 'w') as f:
+            json.dump(result, f, indent=4)
+    elif type == "csv":
+        #  check if the result is a dataframe
+        if isinstance(result, pd.DataFrame):
+            result.to_csv(path, index=False)
+        else:
+            print("The result is not a dataframe")
+            raise ValueError("The result is not a dataframe")
+    else:
+        print("Invalid type")
+        raise ValueError("Invalid type")
 
 def get_category_wise_vector_store():
     client = QdrantClient(url=os.getenv("QDRANT_URL"),api_key=os.getenv("QDRANT_API_KEY"))
