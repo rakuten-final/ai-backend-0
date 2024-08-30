@@ -1,0 +1,14 @@
+flask
+flask_cors
+IPython
+python-dotenv
+psutil
+numpy
+together
+langchain
+langchain_core
+langchain_openai
+langchain_qdrant
+qdrant_client
+langgraph
+langgraph-checkpoint-sqlite

@@ -1,0 +1,99 @@
+localhost:8080/start-session POST
+{
+  "thread_id":10,
+}
+———————— Requirement phase ——————
+
+localhost:8080/chat  POST
+
+{
+  "thread_id":10,
+  "user_input":"Hi"
+}
+
+{
+  "thread_id":10,
+  "user_input":"Hi! I am planning to go to a party and I want to look cool. I also want to gift something to my friend."
+}
+
+{
+  "thread_id":10,
+  "user_input":"Remove Home Entertainment and Bags, Wallets, Belts. By budget is around 5000"
+}
+
+{
+  "thread_id":10,
+  "user_input":"Yes! thanks. I am ready to proceed to the product suggestions."
+}
+
+—— Clothing ——
+
+{
+  "thread_id":10,
+  "user_input":"I want to got a wedding party. So i want ethnic wear, jewellery, and beauty products."
+}
+
+{
+  "thread_id":10,
+  "user_input":"I want to got a wedding party. So i want ethnic wear, jewellery, and beauty products. I want this for my grandmother. Show me some sarees for old ladies."
+}
+
+{
+  "thread_id":10,
+  "user_input":" iam satisified"
+}
+
+{
+  "thread_id":10,
+  "user_input":" no thanks! "
+}
+
+————— Jewllery strt s ————
+
+{
+  "thread_id":10,
+  "user_input":"Show me some Golden and pearl collections !!! "
+}
+
+{
+  "thread_id":10,
+  "user_input":"Lets keep it !!!"
+}
+
+
+{
+  "thread_id":10,
+  "user_input”:”Yes “some bracelet for my brother”
+}
+
+
+{
+  "thread_id":10,
+  "user_input":"Platinu and diamond bracelets "
+}
+
+{
+  "thread_id":10,
+  "user_input":"Yes! Show show me the products"
+}
+
+
+
+
+
+===========
+
+
+{
+  "thread_id":10,
+  "user_input":"I want to relocate from kolkata to bengaluru. I want to purchase some essentials"
+}
+
+
+
+
+
+{
+  "thread_id":10,
+  "user_input":"I want to relocate from kolkata to bengaluru. I want to purchase some essentials. I want some computers and accessories too"
+}
