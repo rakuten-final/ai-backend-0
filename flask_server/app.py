@@ -178,7 +178,7 @@ def get_product_review_scores():
 
 
 if __name__ == "__main__":
-    load_dotenv('../.env')
+    load_dotenv()
     app.run(host="0.0.0.0", port=8080, debug=False)
 
 

@@ -33,7 +33,7 @@ from collections import defaultdict
 from datetime import datetime
 
 
-load_dotenv("../.env")
+load_dotenv()
 
 
 def get_stored_result(path:str, type:Literal["json","csv"]):
