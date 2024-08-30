@@ -93,6 +93,16 @@ def force_stop():
     sessions[thread_id]["agent"] = None
     return jsonify({"status": "success"})
 
+@app.route("/fetch-product", methods=["POST"])
+def fetch_product():
+    product_id = request.json["product_id"]
+    MONGO_HOSTED_URL = os.getenv("MONGO_HOSTED_URL")
+    total_url = f"{MONGO_HOSTED_URL}/api/v1/products/{product_id}"
+    print(total_url)
+    response = requests.get(total_url)
+    return jsonify(response.json())
+
+
 if __name__ == "__main__":
     load_dotenv('../.env')
     app.run(host="0.0.0.0", port=8080, debug=False)

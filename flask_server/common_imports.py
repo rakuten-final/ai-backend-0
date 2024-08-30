@@ -1,6 +1,7 @@
 from typing import Annotated
 from typing_extensions import TypedDict
 from typing import TypedDict, Literal, List, Union
+import requests
 
 import langgraph
 from langgraph.graph import StateGraph
