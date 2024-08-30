@@ -1,0 +1,1052 @@
+{
+    "html_attributions": [],
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5758336,
+                    "lng": 88.36469269999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57714407989272,
+                        "lng": 88.36602672989271
+                    },
+                    "southwest": {
+                        "lat": 22.57444442010728,
+                        "lng": 88.36332707010726
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Tasty Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2942,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/110588266198911743083\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4NadaL4j-v-P5fcQ0OobJnmDnkbbsgl2zmu5LhX2L0kpol57AHzZpq3sNZCPvJ1r7aM_US9MnR8VzMS6P-fSrNPhnEWYvuAtmOvNNSu7H0C8EPDC4HOWLPKifZ-dv8CUgvtCLMThPgBSRrZs-gzq3s86oGzko56JcTmMj6OsYkjmSb",
+                    "width": 3189
+                }
+            ],
+            "place_id": "ChIJZQZtYk12AjoRM460gcFy8co",
+            "plus_code": {
+                "compound_code": "H9G7+8V Kolkata, West Bengal",
+                "global_code": "7MJCH9G7+8V"
+            },
+            "rating": 4,
+            "reference": "ChIJZQZtYk12AjoRM460gcFy8co",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 301,
+            "vicinity": "12/1A, 12/1A, Bankim Chatterjee St, College Square, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.571116,
+                    "lng": 88.35297299999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57247077989272,
+                        "lng": 88.35440172989271
+                    },
+                    "southwest": {
+                        "lat": 22.56977112010728,
+                        "lng": 88.35170207010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Tai Sen Chinese Eating House",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 540,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/105015607873074169056\">Sk Arbaz</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4Skb2EkFCfyrKDkOBo9hwU99_dZ1s8JEe5M54jCDAvI8ZGKFbet_Xe8XNZkH2RezvTLR-0e5AOr4pr7ZN7jI-4poZvst9PkDlpnmyjmRYG9AA77SjqOQiOgBqy187zhiR-CfgKzgdXbsBS9Ek8QQSEQDOUzFlv6kzwjIS0QveoEUUh",
+                    "width": 1066
+                }
+            ],
+            "place_id": "ChIJnQHfGXl3AjoRja18OYYYCrg",
+            "plus_code": {
+                "compound_code": "H9C3+C5 Kolkata, West Bengal",
+                "global_code": "7MJCH9C3+C5"
+            },
+            "rating": 4.5,
+            "reference": "ChIJnQHfGXl3AjoRja18OYYYCrg",
+            "scope": "GOOGLE",
+            "types": [
+                "meal_takeaway",
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 354,
+            "vicinity": "Police Station, 4, Bentinck St, near Lal Bazaar, Esplanade, Lal Bazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5784753,
+                    "lng": 88.3619719
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57980772989272,
+                        "lng": 88.36329057989272
+                    },
+                    "southwest": {
+                        "lat": 22.57710807010728,
+                        "lng": 88.36059092010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sufi Palace",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104918260267199243450\">Chandan Das</a>"
+                    ],
+                    "photo_reference": "AXCi2Q6NXB_HOIgyq78AhVQ-oTZgwPpxzDFfR3twWMbauBWWhzWwyZIr60XEYCs_O0_rTgjgRK_qEDxgQ53pHyG0D2SbthZUD-GcJPu8piYPFKn_6aycA7_15vwvaepJNHAoRvkxt85aYrdBByETFMsapBlsoob-nyZ7i6uu52EMymtZOR4v",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJd0pI2bJ3AjoRIWo6_FIAYgA",
+            "plus_code": {
+                "compound_code": "H9H6+CQ Kolkata, West Bengal",
+                "global_code": "7MJCH9H6+CQ"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJd0pI2bJ3AjoRIWo6_FIAYgA",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 4834,
+            "vicinity": "113, Mahatma Gandhi Rd, College Street Market, College Street, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.573564,
+                    "lng": 88.35641869999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57494582989272,
+                        "lng": 88.35778017989271
+                    },
+                    "southwest": {
+                        "lat": 22.57224617010727,
+                        "lng": 88.35508052010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sei Vui Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2592,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/109962661170371872124\">Upasana Sardar</a>"
+                    ],
+                    "photo_reference": "AXCi2Q6lKeHH_w1rkWGX_TAT0Fbpc4AJCNlfMxYslrZE0vn3WvsVl4r7kz-68sAW4S9YXIOphjyN5IsZSbc6LdRtwCjJDEcaCXvXid9FcFI8V6-HQM6srb_zMnm6QyEJ0EcALJv2VsSGE_3s4IG5lp-d6QJvgjoUAsl32Pnx1yE6xOTbNPap",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJExaVRK53AjoRsaEIJuorZMs",
+            "plus_code": {
+                "compound_code": "H9F4+CH Kolkata, West Bengal",
+                "global_code": "7MJCH9F4+CH"
+            },
+            "price_level": 2,
+            "rating": 4.5,
+            "reference": "ChIJExaVRK53AjoRsaEIJuorZMs",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 2085,
+            "vicinity": "17, Black Burn Ln, opposite Telephone Exchange, Terita Bazar, Poddar Court, Tiretti, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5772207,
+                    "lng": 88.3570008
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57860082989272,
+                        "lng": 88.35835492989273
+                    },
+                    "southwest": {
+                        "lat": 22.57590117010728,
+                        "lng": 88.35565527010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Taskeen",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2799,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/101549398665174453912\">TASKEEN</a>"
+                    ],
+                    "photo_reference": "AXCi2Q78BnEOdDqLcz28nuKzQIpZNknGmVbyCHyBS0R3zrb3og4vGCJ7TYhEP1hpmEllR4KRxjkxnJOK7ionva8VwEeVRYSnIeuqzf8-loR0mMlHEfgIvSHuYxJd1BX2ibNgEGD-SrpenZ6npOG5ibuQYTFprZYGdVMAxtvIxZn5vERtiaKp",
+                    "width": 4192
+                }
+            ],
+            "place_id": "ChIJi0i1lLF3AjoR3qIbl-UZX-Y",
+            "plus_code": {
+                "compound_code": "H9G4+VR Kolkata, West Bengal",
+                "global_code": "7MJCH9G4+VR"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJi0i1lLF3AjoR3qIbl-UZX-Y",
+            "scope": "GOOGLE",
+            "types": [
+                "meal_takeaway",
+                "restaurant",
+                "store",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 1412,
+            "vicinity": "16, Zakaria St, Kolutolla, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5769106,
+                    "lng": 88.3689021
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57825627989272,
+                        "lng": 88.37025562989272
+                    },
+                    "southwest": {
+                        "lat": 22.57555662010728,
+                        "lng": 88.36755597010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Capsicum Fast Food Center",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/114120320446763786838\">Rupankar Ghosh</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4TzPIITgfyvzE6h90XmqG633npP5xAS9Wh_jkwmhSz79kelYBVlksBvhgEDXgAwK7yvqhcS5P70V1EIRj_qrtq3f26_-qutcOibdcnQWtxk5SB70dMIkHIzeE4CO87uqUdG8kYxd9mzEeGa9BVY2vk4SC9zfPtUxh6uWQncNt_1p_J",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJIWs8BU52AjoRe6qIXoPFWcE",
+            "rating": 3.6,
+            "reference": "ChIJIWs8BU52AjoRe6qIXoPFWcE",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 181,
+            "vicinity": "H9G9+QH6, Raja Ram Mohan Sarani Rd, College Street Bata, Baithakkhana, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5726983,
+                    "lng": 88.35532309999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57406082989272,
+                        "lng": 88.35674457989272
+                    },
+                    "southwest": {
+                        "lat": 22.57136117010728,
+                        "lng": 88.35404492010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Tung Nam Eating House",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115156378802236252426\">Souvik Mukherjee</a>"
+                    ],
+                    "photo_reference": "AXCi2Q68LhbwOVsQjwP-xkgnCqKSkENGwHzSIJUiFeZnvPQsOx-ByZvaO_p1JhGhR8SCpoxOVnlz3h7Gp4lHZQvUOmQITFPYjmMCIfNSaDCdsE5auQ-CR6XTgj6CgnyemrpzixcwGPz75fTG_oNH1BMd4cc7la12YZHrCSOWL4OpyByo0eUe",
+                    "width": 4624
+                }
+            ],
+            "place_id": "ChIJe72NAK93AjoRVB3cKDU5qRQ",
+            "plus_code": {
+                "compound_code": "H9F4+34 Kolkata, West Bengal",
+                "global_code": "7MJCH9F4+34"
+            },
+            "price_level": 1,
+            "rating": 4.3,
+            "reference": "ChIJe72NAK93AjoRVB3cKDU5qRQ",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 5435,
+            "vicinity": "24, Chatta Wala Gully, Poddar Court, Tiretti, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5667968,
+                    "lng": 88.3562769
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.56817427989272,
+                        "lng": 88.35759972989271
+                    },
+                    "southwest": {
+                        "lat": 22.56547462010727,
+                        "lng": 88.35490007010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Public Fast Food Centre",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/108257497034694851750\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7o1r-eEy8Gx3bN9ReXGJwY72D1qnRm2Bq67MNEhrGMYwb9abkSGSPB6D-SnBWlKSv_UNreiSoWYteiTxFlpYDDkIQxuRRGHoxsNKhp7jJ2ma0vvRFZgas72_jWVuEHffdJKzdgu1sk7mrt2qQVM--H9GcEYYPdwXprWXD0ZQdKJraQ",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJV3OLp6l3AjoRNol5-bywgXs",
+            "rating": 4,
+            "reference": "ChIJV3OLp6l3AjoRNol5-bywgXs",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 332,
+            "vicinity": "H984+PG6, Chandni Chowk St, Near Sabir Hotel, Chandni Chawk, Bowbazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5673866,
+                    "lng": 88.3544872
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.56863857989272,
+                        "lng": 88.35589057989272
+                    },
+                    "southwest": {
+                        "lat": 22.56593892010728,
+                        "lng": 88.35319092010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Crystal Chimney Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 6000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/115036541680187328673\">sounak bhattacharya</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7Qbo3mC2h1avWcRZdIWxfIZ1hgTPMBFckGWFmRpyUnQJlJMz04gAKTWulwRSX02ha-AA1lA10LsGlQlV70bjIb2qoA65cO0cX0hSNdXf8e9XwDiccGDRIc8OdNIhLOq81rmK0Zlw-lXcxEpBfTNcfhJShVy2eS_Su9apjv0sQbCXdQ",
+                    "width": 8000
+                }
+            ],
+            "place_id": "ChIJ8YMKTah3AjoRuaChv1nG9gM",
+            "plus_code": {
+                "compound_code": "H983+XQ Kolkata, West Bengal",
+                "global_code": "7MJCH983+XQ"
+            },
+            "price_level": 2,
+            "rating": 4.4,
+            "reference": "ChIJ8YMKTah3AjoRuaChv1nG9gM",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 882,
+            "vicinity": "17, Chittaranjan Ave, opposite E Mall, Esplanade, Chandni Chawk, Bow Barracks, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5707729,
+                    "lng": 88.36905929999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57210297989272,
+                        "lng": 88.37037137989272
+                    },
+                    "southwest": {
+                        "lat": 22.56940332010728,
+                        "lng": 88.36767172010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sonali Chinese Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3060,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111810852186411613852\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7xrbGnVZmQ4997a_JNNTGXgeinIxwYhGeRaROs3Ju0lpPvaKelNUh0kR1kLPRyAeVn78LxtZ5dW7xmgwR6wGh4KnVWc3F8VhpiJZStUaUsVuSquIiloBB9WY4U2tdRa3vBpkcUoNYUujCZuI7ZY6lXm7FjUxO9ZVHs8aYYfCps4ULV",
+                    "width": 4080
+                }
+            ],
+            "place_id": "ChIJsyrHs893AjoRhhzYwslW2Ug",
+            "plus_code": {
+                "compound_code": "H9C9+8J Kolkata, West Bengal",
+                "global_code": "7MJCH9C9+8J"
+            },
+            "rating": 4.3,
+            "reference": "ChIJsyrHs893AjoRhhzYwslW2Ug",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 49,
+            "vicinity": "19/4, Mahatma Gandhi Rd, Sealdah, Baithakkhana, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.577175,
+                    "lng": 88.3569586
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57858032989272,
+                        "lng": 88.35831837989272
+                    },
+                    "southwest": {
+                        "lat": 22.57588067010728,
+                        "lng": 88.35561872010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Dilli 6",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4032,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/112101512496139255901\">As Diep</a>"
+                    ],
+                    "photo_reference": "AXCi2Q70Ef8SAxOYem4rjGIJLdhHN3li8oSvVKICYq3SzQYqQjXIgzAuveLzKom2EwQ8XQPcu8SNugIj8NUC8vzsUPaY8whjt3H-hv4obWsMedNxbpKFrVfZGhuWTcZOMOzt7zLox1HGD1weY48lDB3Xkf772rdsvo6YYjoEwiJLS9qFdYVg",
+                    "width": 3024
+                }
+            ],
+            "place_id": "ChIJjeNzH7J3AjoRPl3RcKeaCKE",
+            "plus_code": {
+                "compound_code": "H9G4+VQ Kolkata, West Bengal",
+                "global_code": "7MJCH9G4+VQ"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJjeNzH7J3AjoRPl3RcKeaCKE",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 1724,
+            "vicinity": "16, Zakaria St, Kolutolla, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.571116,
+                    "lng": 88.35297299999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57247077989272,
+                        "lng": 88.35440172989271
+                    },
+                    "southwest": {
+                        "lat": 22.56977112010728,
+                        "lng": 88.35170207010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "4 Season Kitchen",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/100329059982143634746\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q5338EYDI04T55_ejCTQo6DkAgfKGvuIP6BtPv8oaZKSKHcsu4aA8un6j5aaTZ4YVIBqfl9G2W9XHdbwlvVC5yzBj09rMqcaLVMkq6acLr39Qtmak-ReuWPcA1Fhg0Fi4Qj7AEhwXSmDjhW-8UCz7Qsmzk5IRj_AyhSEpgbJZ1mT6Va",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJKRa-e_V3AjoRLWDpiC-ObmM",
+            "plus_code": {
+                "compound_code": "H9C3+C5 Kolkata, West Bengal",
+                "global_code": "7MJCH9C3+C5"
+            },
+            "rating": 4.8,
+            "reference": "ChIJKRa-e_V3AjoRLWDpiC-ObmM",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 22,
+            "vicinity": "Ground Floor, 4, Bentinck St, beside Calcutta Traders, Esplanade, Lal Bazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5663115,
+                    "lng": 88.3688212
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.56763732989272,
+                        "lng": 88.37023837989273
+                    },
+                    "southwest": {
+                        "lat": 22.56493767010728,
+                        "lng": 88.36753872010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Aroma Chinese Fast Food",
+            "opening_hours": {
+                "open_now": true
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/116019130978354947837\">Sourav Mondal</a>"
+                    ],
+                    "photo_reference": "AXCi2Q55Cs6vYK1jb94_5W583S3_zI0OX_DnW1rT1di72D5FJksoVed3cylNGqtzwasWBcvr7rrSWZkLktpTDeROicyTyvyJF2UPM7kGXabqUc7jSkqmrYYy8HiIB4XT7yQicSM7ISRaTg6IWgr7s0Xu-ZmKcLDbHztPRuUXmaRskF-03MHU",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJiyTj6R13AjoR0_HARBSd5e0",
+            "plus_code": {
+                "compound_code": "H989+GG Kolkata, West Bengal",
+                "global_code": "7MJCH989+GG"
+            },
+            "rating": 3.7,
+            "reference": "ChIJiyTj6R13AjoR0_HARBSd5e0",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 206,
+            "vicinity": "131, Acharya Jagdish Chandra Bose Rd, Lebutala, Raja Bazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5668336,
+                    "lng": 88.35607069999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.56814937989272,
+                        "lng": 88.35737562989272
+                    },
+                    "southwest": {
+                        "lat": 22.56544972010728,
+                        "lng": 88.35467597010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sabir's Hotel",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/106000469253741094589\">Dhritimohan Bar</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4a925TTLVNsGztDpd7-x4E-p67R-qHdFvPfr3o5KpBmvdwrUPNLhqRJKjIJvNvHcWm54xUAXNX89RGCp-l6v570xZfheY3aMZq7AFMDhNkRKZmcGVti0GhWLTtBtOhBKOzvCe_lwmeQyWTOTE6RKd8rIPASIzYh8wKiGFW7z3Q-J2C",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJ7QNtqKl3AjoRgwMXiIoxGNE",
+            "plus_code": {
+                "compound_code": "H984+PC Kolkata, West Bengal",
+                "global_code": "7MJCH984+PC"
+            },
+            "price_level": 2,
+            "rating": 4,
+            "reference": "ChIJ7QNtqKl3AjoRgwMXiIoxGNE",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 8314,
+            "vicinity": "3&5, Biplabi Anukul Chandra St, Near Sabir Hotel, Chandni Chawk, Bowbazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5688984,
+                    "lng": 88.3543512
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57027357989272,
+                        "lng": 88.35572072989272
+                    },
+                    "southwest": {
+                        "lat": 22.56757392010728,
+                        "lng": 88.35302107010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Eau Chew",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111122092349807215411\">Anurupa Das</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4HUhvwgZ9HV3DuGvYoDCh9dRkbxwA28tUcwMAXyAL7_p5tXL_e3_55DaaB6sxDwpOfSlG_Fa2pstJ_fMGOk2pd6RYzIf2RTS1CCGOXaJcD-xtqLGpypM_s-uluZ8tYFxtUD1vuDmsXHQ9iGaWhOCZfhxE2CspS9AbhJL-s40DjiOdx",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJTWRdI9F3AjoRWUex32L2jIM",
+            "plus_code": {
+                "compound_code": "H993+HP Kolkata, West Bengal",
+                "global_code": "7MJCH993+HP"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJTWRdI9F3AjoRWUex32L2jIM",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 1144,
+            "vicinity": "12, Ganesh Chandra Ave, Esplanade, Chowringhee North, Bowbazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5772504,
+                    "lng": 88.35598759999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57868847989272,
+                        "lng": 88.35735167989273
+                    },
+                    "southwest": {
+                        "lat": 22.57598882010728,
+                        "lng": 88.35465202010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Sufia Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107230801739089811847\">Rupam Mozumder</a>"
+                    ],
+                    "photo_reference": "AXCi2Q69kFZntx7FU2EY-KA-tZsFcVG712geIH5EDU7Enj53t_t5NkL6urL2S5-lVxrAZBsCCQgOZWJWXaTYRc-q30LHXwJYnDy3_Li9_5l8Bo9SHGEU2bNtoaewuDmKQ6_QN9fHpq38v6GgNfQZcv1WZxCc8Dqdyt8riHI--nLc_LPC89gd",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJ_VC_t7F3AjoRJuRFnmIBMaM",
+            "plus_code": {
+                "compound_code": "H9G4+V9 Kolkata, West Bengal",
+                "global_code": "7MJCH9G4+V9"
+            },
+            "price_level": 2,
+            "rating": 4.2,
+            "reference": "ChIJ_VC_t7F3AjoRJuRFnmIBMaM",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 1607,
+            "vicinity": "Shop No.2, Zakaria St, Kolutolla, Ward Number 43, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5733739,
+                    "lng": 88.3563678
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57465967989272,
+                        "lng": 88.35770087989273
+                    },
+                    "southwest": {
+                        "lat": 22.57196002010728,
+                        "lng": 88.35500122010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "D'Ley Chinese Eating House",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3456,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/117074117080805650628\">Rakesh Saha</a>"
+                    ],
+                    "photo_reference": "AXCi2Q4IM890dH0XIMlnW9kcPG-1oAoAr5mOLP6TzXM5l4nx_Qfrqtxy4vmfK-cesQzeKqMGM2YDwucUAWpgE2qvbLF3YOULb0cR-ix7Qd9tvqabAwgSXVH1C3l5LUl78yfnAp6kgcIzRPBmGDAz6k6ZZV-zl5vVIP46Y4-wIbKZif_HK_PU",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJsd1XZa53AjoR0hmJDg32GSI",
+            "plus_code": {
+                "compound_code": "H9F4+8G Kolkata, West Bengal",
+                "global_code": "7MJCH9F4+8G"
+            },
+            "price_level": 2,
+            "rating": 4.1,
+            "reference": "ChIJsd1XZa53AjoR0hmJDg32GSI",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 811,
+            "vicinity": "16, Black Burn Ln, Terita Bazar, Poddar Court, Tiretti, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5657684,
+                    "lng": 88.3586224
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.56707007989273,
+                        "lng": 88.35991147989273
+                    },
+                    "southwest": {
+                        "lat": 22.56437042010728,
+                        "lng": 88.35721182010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Tasty Treat Restaurant",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3000,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/107742932033129475810\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q54k4-RW_tR_ted91EdOVrqrU1hpiaQI9Q7YhkeDmVW0cAsZQj5V5FAhjtTrFFdfdnh8ZXSGE__P1pyxbd7xTFgc2IdvQ7P5oTkY4LedHFuM4tCtrZuJdL3MDbSnST1IM_Hpx1l1Zj5yihhNbiQlnsNrKzBEf3PHIlOEp7Ab3xbXo4u",
+                    "width": 4000
+                }
+            ],
+            "place_id": "ChIJLViIoHl3AjoRQxmSG3bvVJo",
+            "plus_code": {
+                "compound_code": "H985+8C Kolkata, West Bengal",
+                "global_code": "7MJCH985+8C"
+            },
+            "rating": 4.6,
+            "reference": "ChIJLViIoHl3AjoRQxmSG3bvVJo",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "cafe",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 252,
+            "vicinity": "75, Ganesh Chandra Ave, near INOX HIND, opposite Girin Banerjee park, Chandni Chawk, Bowbazar, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5689778,
+                    "lng": 88.3574526
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57031467989272,
+                        "lng": 88.35880782989271
+                    },
+                    "southwest": {
+                        "lat": 22.56761502010728,
+                        "lng": 88.35610817010726
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "The Central Grub Club",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 2592,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/104952115470554579205\">indrajit lahiri</a>"
+                    ],
+                    "photo_reference": "AXCi2Q6_ooqSPMU4idAtBvfzVzjTaOn_5H6Bboj0vNtNgU0I7x5XDbbavr-O8TVUgUEUq5zJILszC6Y7abvzyJJUsd_DFUrTMF_Y1hihZiDbhTr6UYVkcthnfJSGEoyc9N82TDqQu-ZHKtzM9z4ndnfWeQgc0k5_Cw1fceX6O06KZ5ZLUSzh",
+                    "width": 4608
+                }
+            ],
+            "place_id": "ChIJUxrS8LJ3AjoRtqp5qkRFCls",
+            "plus_code": {
+                "compound_code": "H994+JX Kolkata, West Bengal",
+                "global_code": "7MJCH994+JX"
+            },
+            "rating": 4,
+            "reference": "ChIJUxrS8LJ3AjoRtqp5qkRFCls",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 214,
+            "vicinity": "78/A, Kapalitala Ln, Chandni Chawk, Pilkhana, Kolkata"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 22.5765472,
+                    "lng": 88.3555603
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 22.57786127989273,
+                        "lng": 88.35689797989272
+                    },
+                    "southwest": {
+                        "lat": 22.57516162010728,
+                        "lng": 88.35419832010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/restaurant-71.png",
+            "icon_background_color": "#FF9E67",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/restaurant_pinlet",
+            "name": "Islamia Darbar",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 4080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/103589430127932922314\">A Google User</a>"
+                    ],
+                    "photo_reference": "AXCi2Q5IDlo1-d_UxqJorxZ_OkJHJIXS1qe4Z7qwMEHR3XGoqX_llsc33nMQrWHnApfVKkiKbefzKcWvzTznq-CzYQIpljRfJgld3RFn2a_IzLF_2jfDXda03OGyhQb5ULLXGZBy2djHJN2pZXumooAwQfOZDUqBu2nmrtM4gC1ImMb4pten",
+                    "width": 3072
+                }
+            ],
+            "place_id": "ChIJuaOP_LF3AjoRdo71syqk9sw",
+            "plus_code": {
+                "compound_code": "H9G4+J6 Kolkata, West Bengal",
+                "global_code": "7MJCH9G4+J6"
+            },
+            "rating": 4.2,
+            "reference": "ChIJuaOP_LF3AjoRdo71syqk9sw",
+            "scope": "GOOGLE",
+            "types": [
+                "restaurant",
+                "point_of_interest",
+                "food",
+                "establishment"
+            ],
+            "user_ratings_total": 74,
+            "vicinity": "85, Maulana Saukat Ali St, Kolutolla, Kolkata"
+        }
+    ],
+    "status": "OK"
+}

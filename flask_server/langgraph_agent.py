@@ -3,7 +3,6 @@ from generic_engines import *
 from pydantic_schemas import *
 from agent_utils import *
 
-
 class MyAgent:
     def __init__(self,thread_id):
         self.config = None
@@ -32,8 +31,8 @@ class MyAgent:
         workflow.add_node("new_product_handler", new_product_handler)
         workflow.add_node("product_search", product_search)
         
-        # workflow.add_node("start_for_newplace_check", start_for_newplace_check)
-        # workflow.add_node("new_place_handler", new_place_handler)
+        workflow.add_node("start_for_newplace_check", start_for_newplace_check)
+        workflow.add_node("new_place_handler", new_place_handler)
 
 
         workflow.add_node("final_exit", final_exit)
@@ -57,7 +56,7 @@ class MyAgent:
             req_iterator,
             {
                 True: "human_secondary",
-                False: "final_exit" # here we can add a new node to check for relocation
+                False: "start_for_newplace_check" # here we can add a new node to check for relocation start_for_newplace_check
             }
         )
 
@@ -85,17 +84,17 @@ class MyAgent:
             }
         )
 
-        # workflow.add_conditional_edges(
-        #     "start_for_newplace_check", 
-        #     check_for_relocation,
-        #     {
-        #         'move to new place': "new_place_handler",
-        #         'completed': "final_exit"
-        #     }
-        # )
+        workflow.add_conditional_edges(
+            "start_for_newplace_check", 
+            check_for_relocation,
+            {
+                'move to new place': "new_place_handler",
+                'completed': "final_exit"
+            }
+        )
 
         # workflow.add_edge("new_place_handler", "human_new_place")
-        # workflow.add_edge("human_new_place", "final_exit")
+        workflow.add_edge("new_place_handler", "final_exit")
         workflow.add_edge("final_exit", langgraph.graph.END)
 
         

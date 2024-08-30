@@ -86,14 +86,21 @@ def continue_flow():
         snap = agent.get_recent_state_snap()
 
         if len(snap.keys()) == 1:
+            messsages = []
+            if "age" in data and "gender" in data:
+                messsages.append(HumanMessage(f"Hi I am {data['age']} years old. My gender is {data['age']}). Initially, take this information into account while suggesting products."))
             # Start the conversation
             snap = agent.continue_flow({
                 "cur_state": "Requirement Phase",
                 "requirements": {},
                 "recently_added": [],
                 "mode":"primary",
-                "user_id": sessions[thread_id]["user_id"]
+                "user_id": sessions[thread_id]["user_id"],
+                "new_place_req":{},
+                "messages": messsages
             })
+
+            print("Started with messages",snap["messages"])
         else:
             snap = agent.resume_with_user_input(data["user_input"])
             sessions[thread_id]["cart_budget"] = snap["budget"]
@@ -102,14 +109,28 @@ def continue_flow():
         try:
             text_content = agent.get_last_message().content
             text_content = make_more_interactive_response(text_content)
-            return jsonify({"status": "success","cur_state":snap['cur_state'], "text_content": text_content, "product_list": recently_added,"budget":sessions[thread_id]["cart_budget"]})
+            return jsonify({
+                "status": "success",
+                "cur_state":snap['cur_state'], 
+                "text_content": text_content, 
+                "product_list": recently_added,
+                "budget":sessions[thread_id]["cart_budget"],
+                "new_place_req":snap["new_place_req"]
+                })
         except:
             snap = agent.get_recent_state_snap()
             requirements = snap.get("requirements", {})
             # Making agent None
             sessions[thread_id]["agent"] = None
             text_content = "No messages to show ! Have a good day !"
-            return jsonify({"status": "success","cur_state":"completed","text_content":f"No messages to show ! Have a good day !", "product_list": [],"budget":sessions[thread_id]["cart_budget"]})
+            return jsonify({"status": "success",
+                            "cur_state":"completed",
+                            "text_content":f"No messages to show ! Have a good day !", 
+                            "product_list": [],
+                            "budget":sessions[thread_id]["cart_budget"],
+                            "new_place_req":snap["new_place_req"]
+                            })
+                            
         
     except Exception as e:
         print(e)

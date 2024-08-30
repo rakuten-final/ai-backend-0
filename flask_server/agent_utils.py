@@ -1,6 +1,7 @@
 from pydantic_schemas import *
 from generic_engines import *
 from cc_utils import *
+from google_map_utils import *
 
 
 def welcome(state:AgentState)->AgentState:
@@ -517,15 +518,18 @@ def extract_new_place(state:AgentState)->AgentState:
 
 
 def ask_user_newplace_reqs(state:AgentState)->AgentState:
+    print("<< Asking for new place requirements ... >>")
     msg = SystemMessage("It looks like you are planning to move to a new place. You may tell me about the new place and I may suggest you the essential shops and resturants.")
     state['messages'].append(msg)
     return state
 
 def start_for_newplace_check(state:AgentState)->AgentState:
+    print("<< Starting for new place check ... >>")
     print("Checking for new place ...")
     return state
 
 def new_place_handler(state:AgentState)->AgentState:
+    print("<< New place handler ... >>")
     print("New place handler ...")
     state['mode'] = "idle"
     state['cur_state'] = "new place"
@@ -536,9 +540,13 @@ def new_place_handler(state:AgentState)->AgentState:
     print("-p-"*20)
 
     result = extract_new_place(state)
-    state['new_place_req'] = result
+    state['new_place_req'] = {}
+    new_place_name = result['new_place_name']
+    state['new_place_req']['new_place_name'] = new_place_name
+    state['new_place_req']['medical_stores'] = getPlaces(new_place_name, 'medical-stores', result['meidcal_store_keys'])
+    state['new_place_req']['grocery_stores'] = getPlaces(new_place_name, 'grocery-stores', result['grocery_store_keys'])
+    state['new_place_req']['resturants'] = getPlaces(new_place_name, 'resturants', result['resturants_keys'])
     return state
-
 
 
 
@@ -560,6 +568,7 @@ def make_more_interactive_response(old_msg:str):
         YOu are given an response from the user.
         You have to make the response more interactive and engaging for a better user experience. 
         Do NOT be too fancy or too simple. Make the response very brief and compact and make sure to cover all points.
+        Always mention the categories if any.
         """
     
     query = f"""

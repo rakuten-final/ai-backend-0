@@ -1,0 +1,201 @@
+{
+    "html_attributions": [],
+    "results": [
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 12.932,
+                    "lng": 77.6855732
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 12.93334982989272,
+                        "lng": 77.68692302989272
+                    },
+                    "southwest": {
+                        "lat": 12.93065017010728,
+                        "lng": 77.68422337010728
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/generic_business-71.png",
+            "icon_background_color": "#7B9EB0",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/generic_pinlet",
+            "name": "Medirent,Patient Home Healthcare Company",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 1080,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/110579401882900256464\">Gagan gautam</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7GEV7miH60TQQ6y_Z3XFx_tPAh0m05r5UUH6KiV3jhkqxzOkNv61tg3G-xbUAG65WkquXjASEP5CwXjQ83YyJw8yn-geivCIWyoYYMoBCWkKdXPsOJIwltXSfxIL5bkISTt2zMkUrB2fKGZwvWto0Y74xea-oRVvTsfgG6LTW8E-AH",
+                    "width": 1920
+                }
+            ],
+            "place_id": "ChIJM-OJcKYTrjsRt4TyPJoMdzY",
+            "rating": 4,
+            "reference": "ChIJM-OJcKYTrjsRt4TyPJoMdzY",
+            "scope": "GOOGLE",
+            "types": [
+                "health",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 3,
+            "vicinity": "WMJP+R64 Sakra World Hospital, Devarabeesanahalli Flyover, Devarabisanahalli, Bellandur, Bengaluru"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 12.9273686,
+                    "lng": 77.67140359999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 12.92870512989272,
+                        "lng": 77.67279907989271
+                    },
+                    "southwest": {
+                        "lat": 12.92600547010728,
+                        "lng": 77.67009942010726
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
+            "icon_background_color": "#F88181",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
+            "name": "MedPlus Green Glen Layout Bellandur",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3264,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/113030647232148123328\">Omkaralakshmi Kolagani</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7Y7gfvWx1xhRjZlg5SpOw6E18vayzDD1UGT8aazWxMMzSruWKmpH5HPr3-AVApNCFhkDxD9XDul3-kPNJSB2prd37kdIj2DCp7Pg38T9J2wSyaROXFuBlV18YUsyCAyKw16PXNhr34W82n6Fn2eHCuBiayLtz078Yr0wnkaKy1PFlJ",
+                    "width": 2448
+                }
+            ],
+            "place_id": "ChIJZyQ8cp4TrjsRUgeMiFDuHFY",
+            "plus_code": {
+                "compound_code": "WMGC+WH Bengaluru, Karnataka",
+                "global_code": "7J4VWMGC+WH"
+            },
+            "rating": 2.3,
+            "reference": "ChIJZyQ8cp4TrjsRUgeMiFDuHFY",
+            "scope": "GOOGLE",
+            "types": [
+                "pharmacy",
+                "drugstore",
+                "health",
+                "store",
+                "food",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 44,
+            "vicinity": "Margosa Ave, Green Glen Layout, Bellandur, Bengaluru"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 12.9303522,
+                    "lng": 77.68476079999999
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 12.93160847989272,
+                        "lng": 77.68616712989272
+                    },
+                    "southwest": {
+                        "lat": 12.92890882010728,
+                        "lng": 77.68346747010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
+            "icon_background_color": "#F88181",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
+            "name": "Unique Medicals and General Stores",
+            "place_id": "ChIJ4YdF5s8TrjsROHmSF_2iK5w",
+            "plus_code": {
+                "compound_code": "WMJM+4W Bengaluru, Karnataka",
+                "global_code": "7J4VWMJM+4W"
+            },
+            "rating": 5,
+            "reference": "ChIJ4YdF5s8TrjsROHmSF_2iK5w",
+            "scope": "GOOGLE",
+            "types": [
+                "pharmacy",
+                "health",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 1,
+            "vicinity": "Lakshmana reddy building Opp.intel, Dasarahalli Main Rd, next to Saffron Square, Devarabisanahalli, Bengaluru"
+        },
+        {
+            "business_status": "OPERATIONAL",
+            "geometry": {
+                "location": {
+                    "lat": 12.929321,
+                    "lng": 77.6764072
+                },
+                "viewport": {
+                    "northeast": {
+                        "lat": 12.93067552989272,
+                        "lng": 77.67778572989272
+                    },
+                    "southwest": {
+                        "lat": 12.92797587010728,
+                        "lng": 77.67508607010727
+                    }
+                }
+            },
+            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
+            "icon_background_color": "#F88181",
+            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
+            "name": "City Medical And General Stores",
+            "opening_hours": {
+                "open_now": false
+            },
+            "photos": [
+                {
+                    "height": 3024,
+                    "html_attributions": [
+                        "<a href=\"https://maps.google.com/maps/contrib/111208550961485455888\">safiur rahman</a>"
+                    ],
+                    "photo_reference": "AXCi2Q7EzBB8kGihNiQIJ9OQuXd3aNNlk4c57l7JsQFoTbEXW66pFx86QcieRhX_qrPHbK8ZIBrJvdwVMif7iKmBI_ouM2a1kEUcD0t4fFcEcrZFiaB-XygnX80fjThNHZEfN0_rtR0Ud-wsBFR1dvfDuVyAOv4GippKhpEJ3syqvSYXj3Lb",
+                    "width": 4032
+                }
+            ],
+            "place_id": "ChIJs4zbfJ8TrjsRiEdzeFeG93s",
+            "plus_code": {
+                "compound_code": "WMHG+PH Bengaluru, Karnataka",
+                "global_code": "7J4VWMHG+PH"
+            },
+            "rating": 4.1,
+            "reference": "ChIJs4zbfJ8TrjsRiEdzeFeG93s",
+            "scope": "GOOGLE",
+            "types": [
+                "pharmacy",
+                "health",
+                "store",
+                "point_of_interest",
+                "establishment"
+            ],
+            "user_ratings_total": 67,
+            "vicinity": "Survey No. 93/1, No. 503/5, Gurumurthy Reddy Apartment, B.H, Bellandur Main Rd, Bellandur, Bengaluru"
+        }
+    ],
+    "status": "OK"
+}
