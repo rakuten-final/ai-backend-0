@@ -15,7 +15,8 @@ sessions = {
     10: {
         "agent": None,
         "cart": [], # List of product ids
-        "cart_budget":10000.
+        "cart_budget":10000.,
+        "user_id": "user_1"
     }
 }
 
@@ -49,7 +50,8 @@ def start_session():
     sessions[thread_id] = {
         "agent": MyAgent(thread_id),
         "cart": [],
-        "cart_budget":10000.
+        "cart_budget":10000.,
+        "user_id": "user_1"
     }
     return jsonify({"status": "success", "thread_id": thread_id})
 
@@ -72,6 +74,7 @@ def continue_flow():
                 "requirements": {},
                 "recently_added": [],
                 "mode":"primary",
+                "user_id": sessions[thread_id]["user_id"]
             })
         else:
             snap = agent.resume_with_user_input(data["user_input"])

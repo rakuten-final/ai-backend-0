@@ -1,5 +1,6 @@
 from pydantic_schemas import *
 from generic_engines import *
+from cc_utils import *
 
 
 def welcome(state:AgentState)->AgentState:
@@ -410,6 +411,15 @@ def product_search(state:AgentState)->AgentState:
     print(f"Showing products for {state['cur_state']} Price range: {price_lower_bound} - {price_upper_bound}")
     print("Product list: ",product_doc_list)
     product_list = [doc.metadata['uniq_id'] for doc in product_doc_list]
+
+    # Credit card offer
+    cc_payload = {
+        "user":{"cc_list" : ["Amazon pay ICICI credit card", "HDFC Bank Credit Card"]}, # To be feched from mongo
+        "prod_list":product_list
+    }
+    cc_prod_path = "../stored-result-git/cc_prod_offer.json"
+
+    product_list = get_reason_for_product_offer(cc_payload,cc_prod_path)
 
     state['requirements'][state['cur_state']]['list_of_products'].append(product_list)
     state['recently_added'] = product_list

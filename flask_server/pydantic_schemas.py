@@ -45,6 +45,7 @@ class AskingsForNewProduct(BaseModel):
 
 
 class AgentState(TypedDict):
+    user_id: str
     cur_state: str
     messages: Annotated[list, add_messages]
     requirements: dict = {}
