@@ -44,8 +44,17 @@ class AskingsForNewProduct(BaseModel):
     asking_for_new_product: bool = Field(description="Whether the user is asking for a new/another type of product.")
 
 
+class MoveToPlace(BaseModel):
+    move_to_place: bool = Field(description="Whether the user wants to move to a new place.")
+
+class NewPlaceNameAndRequirement(BaseModel):
+    new_place_name: str = Field(description="The name of the new place where the user wants to move to.")
+    meidcal_store_keys: str = Field(description="Default: Any essential medical store where the user can get medical supplies.")
+    grocery_store_keys: str = Field(description="Default: Any grocery store where the user can get groceries.")
+    resturants_keys: str = Field(description="Any special cuisine resturants where the user can get food. Default: Any resturants.")
+
+
 class AgentState(TypedDict):
-    user_id: str
     cur_state: str
     messages: Annotated[list, add_messages]
     requirements: dict = {}
@@ -53,4 +62,6 @@ class AgentState(TypedDict):
     first_level_not_chosen: List[str] = []
     mode: str = "idle"
     recently_added: List[str] = []
+    CATEGORY_WISE_VECTOR_STORE: dict
     budget: float = 10000.00
+    new_place_req:dict = {}

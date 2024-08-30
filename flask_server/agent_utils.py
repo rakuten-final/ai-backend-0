@@ -21,9 +21,6 @@ def secondary_welcome(state:AgentState)->AgentState:
 
 
 
-
-
-
 def exit_from_requirements(state:AgentState)->AgentState:
     msg = SystemMessage(f"Final requirements:{state['first_level_chosen']}")
     print(msg.content)
@@ -53,15 +50,13 @@ def exit_from_requirements_secondary(state:AgentState)->AgentState:
 
 def final_exit(state:AgentState)->AgentState: 
     # Clearing all threads
-    state["cur_state"] = "completed"
+    state['cur_state'] = "exit"
     for key in state['requirements']:
         state['requirements'][key]['thread_conversation'] = []
     msg = SystemMessage(f"So finally we have the following requirements:\n {json.dumps(state['requirements'], indent=4)}")
     print(msg.content)
     state['messages'].append(msg)
     return state
-
-
 
 
 
@@ -74,6 +69,7 @@ def generate_situational_requirements(user_situation: str,update_mode=False):
     You are helping a user who is looking for products on an e-commerce platform. 
     He/she will tell you about his/her situation and you will suggest products accordingly those perfectly fit his/her situational requirements.
     You are given a list of possible categories, you have to determine whether products from these categories are relevant to the user's situation or not.
+    ONLY Choose those categories which are very much relevant to the user's situation.
     """
 
     if not update_mode:
@@ -108,9 +104,12 @@ def generate_secondary_requirements(chat_conversation):
     systemPromptText = """You are an AI assistant. 
     You are helping a user who is looking for products on an e-commerce platform. 
     Your task is to determine the user's requirements based on the conversation.
-    Generate a list of detailed requirements that the user has.
+    Generate a list of detailed requirements that the user has. 
+    You also have to determine the price range that the user is looking for. Make the requirements very unique, detailed, and specific.
 
     Example: For a clothing product. [Requirement 1: The product should be of a specific brand. Requirement 2: The product should be of a specific color. Requirement 3: The product should be of a specific size.]
+    price_lower_bound: 0
+    price_upper_bound: 10000
     """
 
     query = f"""
@@ -121,7 +120,6 @@ def generate_secondary_requirements(chat_conversation):
     result = engine.run(query).dict()
     
     return result
-
 
 
 
@@ -329,7 +327,27 @@ def ask_ai_secondary_level_requirements(state:AgentState)->AgentState:
 
 
 
+def ask_categrory_requirements_from_feedback(primary_chats, category):
+    systemPromptText = f"""You are an AI assistant.
+    You are helping a user who is looking for products on an e-commerce platform for the {category} category. 
+    You have to generate detailed requirements based on the can best suit the user's needs for the {category} category. Then you have to suggest products accordingly.
+    Example: If the user has mentioed he is moving to a new hot place. You can suggest him to buy "summer clothes", "sunglasses", "half sleeve shirts" etc.
+    for the "clothing" category.  
+    
+    Make the requirements very unique, detailed, and specific for the uese case.
+    """
 
+    query = f"""
+    Previous messages: {primary_chats}
+
+
+    Now tell me, what are your requirements for {category} products?
+    """
+
+    engine = LangchainJSONEngine(UserRequirement, systemPromptText=systemPromptText)
+    result = engine.run(query).dict()
+    
+    return result
 
 
 
@@ -342,8 +360,27 @@ def iteration_start(state:AgentState)->AgentState:
         if state['requirements'][req]['secondary_status'] == "new requirement":
             print(f"Activating {req} ...")
             state['cur_state'] = req
+            state['requirements'][req]['secondary_status'] = "completed"
+
+            reqs_from_feedback = ask_categrory_requirements_from_feedback("\n".join([f"{msg.type} : {msg.content}" for msg in state['messages']]),req)
+
+            stringified_reqs = "\n".join(reqs_from_feedback['requirement_list'])
+
+            print("*"*20)
+            print("Req from feedback: ",reqs_from_feedback)
+            print("*"*20)
+
+            # TODO
+            msg = SystemMessage(f"Hi looks like you are looking for some {state['cur_state']} products. Some requirements may be {stringified_reqs}") # AI generated
+            state['requirements'][req]['thread_conversation'].append(msg)
+
+            state['requirements'][state['cur_state']]['list_of_requirements'][-1] = reqs_from_feedback['requirement_list']
+            state['requirements'][state['cur_state']]['price_lower_bounds'][-1] = 0 # AI generated
+            state['requirements'][state['cur_state']]['price_upper_bounds'][-1] = 100000 # AI generated
             break;
     return state
+
+
 
 def req_iterator(state:AgentState)->AgentState:
     print("Req iterator ...")
@@ -354,10 +391,6 @@ def req_iterator(state:AgentState)->AgentState:
 
     state['cur_state'] = "exit"   
     return False
-
-
-
-
 
 def dummy_secondary_req_handler(state:AgentState)->AgentState:
     print("Dummy secondary req handler ...")
@@ -424,3 +457,114 @@ def product_search(state:AgentState)->AgentState:
     state['requirements'][state['cur_state']]['list_of_products'].append(product_list)
     state['recently_added'] = product_list
     return state
+
+
+
+
+
+
+
+
+def check_for_relocation(state:AgentState)->AgentState:
+    chats = "\n".join([f"{msg.type} : {msg.content}" for msg in state['messages']])
+    print("-p-"*20)
+    print("Chats: ",chats)
+    print("-p-"*20)
+    systemPromptText = """You are an AI assistant.
+    You are helping a user who is looking for products on an e-commerce platform. 
+    You are given the user's pervious conversation messages. You have to whether the user has a plan to move to a new place/city/country for relocation, travelling etc.
+    """
+
+    query = f"""
+    Previous messages: {chats}
+    Now tell me, is the user planning to move to a new place?
+    """
+
+    engine = LangchainJSONEngine(MoveToPlace, systemPromptText=systemPromptText)
+    result = engine.run(query).dict()
+
+    print(f"is the user planning to move to a new place??????? : {result}")
+
+    return 'move to new place' if result['move_to_place'] else 'completed'
+
+
+def extract_new_place(state:AgentState)->AgentState:
+    chats = "\n".join([f"{msg.type} : {msg.content}" for msg in state['messages']])
+    print("-p-"*20)
+    print("Chats: ",chats)
+    print("-p-"*20)
+    systemPromptText = """You are an AI assistant.
+    You are helping a user who is looking for products on an e-commerce platform. 
+    You are given the user's pervious conversation messages. You have to extract the new place where the user wants to move.
+    You also determine the search keys for essential medical stores, grocery stores.
+    If the user has any specific cusine in mind, you have to determine the search keys for resturants.
+    The search keys should be very brief.
+    """
+
+    query = f"""
+    Previous messages: {chats}
+    Now extract the new place where the user wants to move. And also the search keys for essential medical stores, grocery stores, and resturants.
+    """
+
+    engine = LangchainJSONEngine(NewPlaceNameAndRequirement, systemPromptText=systemPromptText)
+    result = engine.run(query).dict()
+
+    return result
+
+
+def ask_user_newplace_reqs(state:AgentState)->AgentState:
+    msg = SystemMessage("It looks like you are planning to move to a new place. You may tell me about the new place and I may suggest you the essential shops and resturants.")
+    state['messages'].append(msg)
+    return state
+
+def start_for_newplace_check(state:AgentState)->AgentState:
+    print("Checking for new place ...")
+    return state
+
+def new_place_handler(state:AgentState)->AgentState:
+    print("New place handler ...")
+    state['mode'] = "idle"
+    state['cur_state'] = "new place"
+
+    chat = "\n".join([f"{msg.type} : {msg.content}" for msg in state['messages']])
+    print("-p-"*20)
+    print("Chats: ",chat)
+    print("-p-"*20)
+
+    result = extract_new_place(state)
+    state['new_place_req'] = result
+    return state
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+def make_more_interactive_response(old_msg:str):
+    print("Making more interactive response ...")
+    # USe LangchainSimpleEngine
+    systemPromptText = """You are an AI assistant. 
+        YOu are given an response from the user.
+        You have to make the response more interactive and engaging for a better user experience. 
+        Do NOT be too fancy or too simple. Make the response very brief and compact and make sure to cover all points.
+        """
+    
+    query = f"""
+    Old message: {old_msg}
+
+    Now make the response more interactive and engaging.
+    """
+
+    engine = LangchainSimpleEngine(systemPromptText=systemPromptText)
+    result = engine.run(query)
+
+    return result.content

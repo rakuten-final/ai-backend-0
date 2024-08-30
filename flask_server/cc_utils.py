@@ -11,10 +11,27 @@ def get_reason_for_product_offer(input: Dict[str, Any],cc_prod_path:str) -> List
         for prod in prod_list:
             for cc_prod in cc_prod_offer["credit_card_to_products_list"]:
                 if cc_prod["credit_card_name"].lower() == cc.lower():
-                    # print(cc_prod)
                     for prod_offer in cc_prod["product_offer_list"]:
                         if prod["brand"].lower() in prod_offer["product_brand_name"].lower():
-                            output.append({"prod_id": prod["uniq_id"], "reason": f"The {cc} offers discounts for {prod['brand']} products with {prod_offer['offer_details']}"})
+                            found = False
+                            for item in output:
+                                if item["prod_id"] == prod["uniq_id"]:
+                                    item["reason"] += f" The {cc} offers discounts for {prod['brand']} products with {prod_offer['offer_details']}"
+                                    found = True
+                                    break
+                            if not found:
+                                output.append({"prod_id": prod["uniq_id"], "reason": f"The {cc} offers discounts for {prod['brand']} products with {prod_offer['offer_details']}"})
+    
+    # Add unmatched products to the output
+    for prod in prod_list:
+        found = False
+        for item in output:
+            if item["prod_id"] == prod["uniq_id"]:
+                found = True
+                break
+        if not found:
+            output.append({"prod_id": prod["uniq_id"], "reason": ""})
+    
     return output
 
 

@@ -21,16 +21,21 @@ class MyAgent:
         workflow.add_node("exit_from_first_level_requirements", exit_from_requirements)
 
         workflow.add_node("iteration_start", iteration_start)
-        workflow.add_node("welcome_secondary", secondary_welcome)
+        # workflow.add_node("welcome_secondary", secondary_welcome)
         workflow.add_node("human_secondary", human_node_secondary)
         workflow.add_node("human_secondary_new_prod", human_node_secondary)
+        # workflow.add_node("human_new_place", human_node_secondary)
         workflow.add_node("ask_ai_secondary_level_requirements", ask_ai_secondary_level_requirements)
         workflow.add_node("exit_from_requirements_secondary", exit_from_requirements_secondary)
 
 
         workflow.add_node("new_product_handler", new_product_handler)
         workflow.add_node("product_search", product_search)
-        # workflow.add_node("dummy_secondary_req_handler", dummy_secondary_req_handler)
+        
+        # workflow.add_node("start_for_newplace_check", start_for_newplace_check)
+        # workflow.add_node("new_place_handler", new_place_handler)
+
+
         workflow.add_node("final_exit", final_exit)
 
         
@@ -51,12 +56,12 @@ class MyAgent:
             "iteration_start", 
             req_iterator,
             {
-                True: "welcome_secondary",
-                False: "final_exit"
+                True: "human_secondary",
+                False: "final_exit" # here we can add a new node to check for relocation
             }
         )
 
-        workflow.add_edge("welcome_secondary", "human_secondary")
+        # workflow.add_edge("welcome_secondary", "human_secondary")
         workflow.add_conditional_edges(
             "human_secondary", 
             check_statisfied_secondary,
@@ -75,10 +80,22 @@ class MyAgent:
             "human_secondary_new_prod", 
             check_asking_for_new_product_secondary,
             {
-                'asking for new product': "welcome_secondary",
+                'asking for new product': "ask_ai_secondary_level_requirements",
                 'completed': "iteration_start"
             }
         )
+
+        # workflow.add_conditional_edges(
+        #     "start_for_newplace_check", 
+        #     check_for_relocation,
+        #     {
+        #         'move to new place': "new_place_handler",
+        #         'completed': "final_exit"
+        #     }
+        # )
+
+        # workflow.add_edge("new_place_handler", "human_new_place")
+        # workflow.add_edge("human_new_place", "final_exit")
         workflow.add_edge("final_exit", langgraph.graph.END)
 
         
@@ -92,9 +109,6 @@ class MyAgent:
         self.app = app
         self.config = {"configurable": {"thread_id": str(thread_id)}}
         return app
-    
-
-      
 
     
     def get_recent_state_snap(self):
@@ -115,7 +129,6 @@ class MyAgent:
         return self.get_recent_state_snap()
 
     def resume_with_user_input(self, user_input:str):
-        print("Keys!!",self.get_recent_state_snap().keys())
         if self.get_recent_state_snap()["mode"] == "secondary":
             print("<<<<<<<<<<<<<<<<< Resuming secondary ...")
             return self.resume_with_user_input_secondary(user_input)

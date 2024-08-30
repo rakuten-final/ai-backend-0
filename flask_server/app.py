@@ -83,13 +83,15 @@ def continue_flow():
         recently_added = snap["recently_added"]
         try:
             text_content = agent.get_last_message().content
+            text_content = make_more_interactive_response(text_content)
             return jsonify({"status": "success","cur_state":snap['cur_state'], "text_content": text_content, "product_list": recently_added,"budget":sessions[thread_id]["cart_budget"]})
         except:
             snap = agent.get_recent_state_snap()
             requirements = snap.get("requirements", {})
             # Making agent None
             sessions[thread_id]["agent"] = None
-            return jsonify({"status": "success","cur_state":"completed","text_content":f"No messages to show ! Have a good day ! Your requirements are {requirements}", "product_list": [],"budget":sessions[thread_id]["cart_budget"]})
+            text_content = "No messages to show ! Have a good day !"
+            return jsonify({"status": "success","cur_state":"completed","text_content":f"No messages to show ! Have a good day !", "product_list": [],"budget":sessions[thread_id]["cart_budget"]})
         
     except Exception as e:
         print(e)
