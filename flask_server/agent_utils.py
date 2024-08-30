@@ -179,6 +179,8 @@ def check_statisfied(state:AgentState)->AgentState:
     systemPromptText = """You are an AI assistant.
     You are helping a user who is looking for products on an e-commerce platform.
     You read the user's previous conversations and determine whether the user has described all his/her requirements and ready to proceed with the product suggestions.
+
+    If the user says 'Lets go ahead ","Ok", "Move on","Yes! thanks."  or similar etc. - You have consider the requirements as fullfilled / satisfied.
     """
 
     query = f"""
@@ -206,6 +208,8 @@ def check_statisfied_secondary(state:AgentState)->AgentState:
     You are helping a human who is looking for {"clothing"} products on an e-commerce platform.
     You read the human's previous conversations and determine the status of the conversation.
     You have to determine whether the user is asking for a new requirement or he/she is satisfied with the current requirements.
+
+    If the user says 'Lets go ahead ","Ok", "Move on", "Yes! thanks."  or similar etc. - You have consider the requirements as fullfilled.
     """
 
     query = f"""
@@ -360,7 +364,7 @@ def iteration_start(state:AgentState)->AgentState:
         if state['requirements'][req]['secondary_status'] == "new requirement":
             print(f"Activating {req} ...")
             state['cur_state'] = req
-            state['requirements'][req]['secondary_status'] = "completed"
+            # state['requirements'][req]['secondary_status'] = "completed"
 
             reqs_from_feedback = ask_categrory_requirements_from_feedback("\n".join([f"{msg.type} : {msg.content}" for msg in state['messages']]),req)
 

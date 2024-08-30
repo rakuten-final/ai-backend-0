@@ -97,3 +97,12 @@ localhost:8080/chat  POST
   "thread_id":10,
   "user_input":"I want to relocate from kolkata to bengaluru. I want to purchase some essentials. I want some computers and accessories too"
 }
+
+
+----------- 
+
+Hi
+
+I want some some sarees for my Mom.
+
+
