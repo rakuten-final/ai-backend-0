@@ -4,7 +4,7 @@ from pydantic_schemas import *
 from agent_utils import *
 from langgraph_agent import *
 from prod_review_utils import *
-from MongoUtils import utils
+from MongoUtils import utils, userutils
 
 
 app = flask.Flask(__name__)
@@ -19,6 +19,18 @@ sessions = {
         "user_id": "user_1"
     }
 }
+
+@app.route("/api/v1/user/insert", methods=["POST"])
+def insertUser():
+    user = request.json
+    userutils.insert(user)
+    return jsonify({"status": "success"}), 200
+
+@app.route("/api/v1/user/fetch", methods=["POST"])
+def getUser():
+    id = request.json["id"]
+    user = userutils.fetchById(id)
+    return jsonify(user), 200
 
 @app.route("/api/v1/products", methods=["GET"])
 def getProducts():
