@@ -1,0 +1,366 @@
+{
+    "credit_card_to_products_list": [
+        {
+            "credit_card_name": "Amazon pay ICICI credit card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "Samsung, Sony, Xiaomi, Boat, Oneplus, Apple, Bose, Dell, HP, Lenovo, Microsoft, Toshiba, LG, Panasonic, Canon, Nikon, GoPro, Dyson, KitchenAid, Cuisinart, Oster, Hamilton Beach",
+                    "offer_details": "5% off on select electronics products"
+                },
+                {
+                    "product_brand_name": "Levis, Vero Moda, Adidas, Nike, Arrow, Allen Solly, Pepe Jeans, Puma, Titan, Tommy Hilfiger, Van Heusen, Wrangler, Flying Machine, Biba, H&M, Jack & Jones, Louis Philippe, Myntra, Peter England, Raymond, Red Tape, W, Zara, Global Desi, Aurelia",
+                    "offer_details": "Cashback of Rs.3000 on minimum purchase of Rs.9000 on all clothing and fashion products"
+                },
+                {
+                    "product_brand_name": "Dove, Pantene, Colgate, Gillette, L'Oreal, Maybelline, Neutrogena, Nivea, Lakme",
+                    "offer_details": "10% off upto Rs. 1500"
+                },
+                {
+                    "product_brand_name": "Philips, LG, Panasonic, Mi, Casio, Toshiba, Sharp, GoPro, Dyson, KitchenAid, Cuisinart, Oster, Hamilton Beach",
+                    "offer_details": "Flat 7.5-10% off on all gadgets"
+                }
+            ]
+        },
+        {
+            "credit_card_name": "HDFC Bank Credit Card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "Bose, Sony, HP, Dell, Lenovo, Toshiba, LG, Panasonic",
+                    "offer_details": "10% off on select electronics products"
+                },
+                {
+                    "product_brand_name": "Arrow, Allen Solly, Levi's, Nike, Pepe Jeans, Puma, Titan, Tommy Hilfiger, Van Heusen, Wrangler",
+                    "offer_details": "Cashback of Rs.3000 on minimum purchase of Rs.8000 on all clothing and fashion products"
+                },
+                {
+                    "product_brand_name": "LG, Panasonic, Toshiba, Sharp",
+                    "offer_details": "12% off upto Rs. 4000 on all home and kitchen appliances"
+                },
+                {
+                    "product_brand_name": "Fossil, Michael Kors, Kate Spade, Coach, Guess, Oakley, Swarovski, Pandora",
+                    "offer_details": "8-12% off on all jewelry and accessories"
+                }
+            ]
+        },
+        {
+            "credit_card_name": "IDFC Credit Card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "Apple, Samsung, Sony, HP, Dell, Lenovo, Asus, Acer, LG, Panasonic, Canon, Nikon",
+                    "offer_details": "7.5% off on select electronics products"
+                },
+                {
+                    "product_brand_name": "Adidas, Puma, Biba, Flying Machine, H&M, Jack & Jones, Louis Philippe, Myntra, Peter England, Raymond, Red Tape, Vero Moda, W, Zara",
+                    "offer_details": "Cashback of Rs.1500 on minimum purchase of Rs.5000 on all clothing and fashion products"
+                },
+                {
+                    "product_brand_name": "Kate Spade, Coach, Guess, Oakley, Tiffany & Co., Swarovski, Pandora",
+                    "offer_details": "10% off on all jewelry and accessories"
+                }
+            ]
+        },
+        {
+            "credit_card_name": "HSBC Credit Card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "Mi, Samsung, Sony, LG, Panasonic, Philips, JBL, Sennheiser, Skullcandy, Marshall, Beats, Bose, HP, Dell, Lenovo, Asus, Acer, Toshiba, Sharp, Canon, Nikon, GoPro, Dyson, KitchenAid, Cuisinart, Oster, Hamilton Beach",
+                    "offer_details": "5% off on select electronics products"
+                },
+                {
+                    "product_brand_name": "Nike, Reebok, Allen Solly, Biba, Fastrack, Jack & Jones, Lakme, Myntra, Titan, Tommy Hilfiger, United Colors of Benetton",
+                    "offer_details": "Flat 15% off on minimum purchase of Rs.2000 on all clothing and fashion products"
+                },
+                {
+                    "product_brand_name": "LG, Panasonic, Philips, Casio, HP, Dell, Lenovo, Asus, Acer, Toshiba, Sharp, Canon, Nikon, GoPro, Dyson, KitchenAid, Cuisinart, Oster, Hamilton Beach",
+                    "offer_details": "Cashback of Rs.2000 on minimum purchase of Rs.8000"
+                }
+            ]
+        },
+        {
+            "credit_card_name": "Yes Bank Credit Card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "LG, Philips, Bose, JBL",
+                    "offer_details": "10% off on select electronics products"
+                },
+                {
+                    "product_brand_name": "Levi's, Arrow, Flying Machine",
+                    "offer_details": "15% off on all clothing and fashion products"
+                },
+                {
+                    "product_brand_name": "Reebok, Adidas, Reliance footwear, Puma",
+                    "offer_details": "20% off on all shoes and footwear"
+                }
+            ]
+        },
+        {
+            "credit_card_name": "Rakuten Credit Card",
+            "product_offer_list": [
+                {
+                    "product_brand_name": "Samsung",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Sony",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "JBL",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Google",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Xiaomi",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Boat",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Oneplus",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Apple",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Bose",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Dell",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "HP",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Lenovo",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Microsoft",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Toshiba",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "LG",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Panasonic",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Canon",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Nikon",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "GoPro",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Dyson",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "KitchenAid",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Cuisinart",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Oster",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Hamilton Beach",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Global Desi",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Aurelia",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Philips",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Mi",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Reebok",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Allen Solly",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Biba",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Fastrack",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Jack & Jones",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Lakme",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Myntra",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Titan",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Tommy Hilfiger",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "United Colors of Benetton",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Reliance footwear",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Levi's",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Arrow",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Casio",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Flying Machine",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Zara",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "H&M",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Forever 21",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "GAP",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Mango",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Marks & Spencer",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Old Navy",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Uniqlo",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Victoria's Secret",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Bath & Body Works",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "The Body Shop",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Sephora",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "MAC Cosmetics",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Lululemon",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "Tanishq",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Malabar Gold and Diamonds",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Kalyan Jewellers",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "PC Jeweller",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "Senco Gold and Diamonds",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "Joyalukkas",
+                    "offer_details": "10% off"
+                },
+                {
+                    "product_brand_name": "TBZ - The Original",
+                    "offer_details": "15% off"
+                },
+                {
+                    "product_brand_name": "GRT Jewellers",
+                    "offer_details": "20% off"
+                },
+                {
+                    "product_brand_name": "PNG Jewellers",
+                    "offer_details": "10% off"
+                }
+            ]
+        }
+    ]
+}
