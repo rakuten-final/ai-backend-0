@@ -26,15 +26,21 @@ def getProducts():
     return jsonify(products), 200
 
 
-@app.route("/api/v1/products/<id>", methods=["GET"])
-def getProductById(id):
+@app.route("/api/v1/products", methods=["POST"])
+def getProductById():
+    
+    id = request.json["id"]
+    
     product = utils.fetchById(id)
     return jsonify(product), 200
 
-@app.route("/api/v1/products/paginated/<int:page_number>/<int:page_size>", methods=["GET"])
-def get_paginated_products(page_number, page_size):
+@app.route("/api/v1/products/paginated", methods=["POST"])
+def get_paginated_products():
     try:
         # Assuming fetchPaginated is a function that retrieves products based on pagination
+        page_size = int(request.json["page_size"])
+        page_number = int(request.json["page_number"])
+        
         products = utils.fetchPaginated(page_size, page_number)
         return jsonify(products), 200
     except ValueError as e:
