@@ -4,6 +4,7 @@ from pydantic_schemas import *
 from agent_utils import *
 from langgraph_agent import *
 from prod_review_utils import *
+from MongoUtils import utils
 
 
 app = flask.Flask(__name__)
@@ -17,6 +18,30 @@ sessions = {
         "cart_budget":10000.
     }
 }
+
+@app.route("/api/v1/products", methods=["GET"])
+def getProducts():
+    products = utils.fetchAll()
+    return jsonify(products), 200
+
+
+@app.route("/api/v1/products/<id>", methods=["GET"])
+def getProductById(id):
+    product = utils.fetchById(id)
+    return jsonify(product), 200
+
+@app.route("/api/v1/products/paginated/<int:page_number>/<int:page_size>", methods=["GET"])
+def get_paginated_products(page_number, page_size):
+    try:
+        # Assuming fetchPaginated is a function that retrieves products based on pagination
+        products = utils.fetchPaginated(page_size, page_number)
+        return jsonify(products), 200
+    except ValueError as e:
+        # Handle the case where conversion to integer fails or other errors occur
+        return jsonify({"error": str(e)}), 400
+    except Exception as e:
+        # Handle unexpected errors
+        return jsonify({"error": "An unexpected error occurred: " + str(e)}), 500
 
 @app.route("/start-session", methods=["POST"])
 def start_session():
@@ -123,7 +148,8 @@ def get_product_review_scores():
     
     result = {
         "monthly_averages": monthly_averages,
-        "last_three_months_avg": last_three_months_avg
+        "last_three_months_avg": last_three_months_avg,
+        "product_id": product_id
     }
     return jsonify(result)
 
