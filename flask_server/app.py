@@ -65,7 +65,7 @@ def get_paginated_products():
 @app.route("/start-session", methods=["POST"])
 def start_session():
     data = request.json
-    thread_id =  data["session_id"] # Must be integer
+    thread_id =  int(data["session_id"]) # Must be integer
     sessions[thread_id] = {
         "agent": MyAgent(thread_id),
         "cart": [],
@@ -78,7 +78,7 @@ def start_session():
 def continue_flow():
     try:
         data = request.json
-        thread_id = data["session_id"]
+        thread_id = int(data["session_id"])
         agent = sessions[thread_id]["agent"]
 
         if agent is None:
