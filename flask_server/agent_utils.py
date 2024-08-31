@@ -543,9 +543,9 @@ def new_place_handler(state:AgentState)->AgentState:
     state['new_place_req'] = {}
     new_place_name = result['new_place_name']
     state['new_place_req']['new_place_name'] = new_place_name
-    state['new_place_req']['medical_stores'] = getPlaces(new_place_name, 'medical-stores', result['meidcal_store_keys'])
-    state['new_place_req']['grocery_stores'] = getPlaces(new_place_name, 'grocery-stores', result['grocery_store_keys'])
-    state['new_place_req']['resturants'] = getPlaces(new_place_name, 'resturants', result['resturants_keys'])
+    state['new_place_req']['medical_stores'] = getPlaces(new_place_name, 'medical-stores', result['meidcal_store_keys'])["results"][:2]
+    state['new_place_req']['grocery_stores'] = getPlaces(new_place_name, 'grocery-stores', result['grocery_store_keys'])["results"][:2]
+    state['new_place_req']['resturants'] = getPlaces(new_place_name, 'resturants', result['resturants_keys'])["results"][:2]
     return state
 
 
