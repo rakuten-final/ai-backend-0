@@ -5,6 +5,15 @@ from agent_utils import *
 from langgraph_agent import *
 from prod_review_utils import *
 from MongoUtils import utils, userutils
+import hashlib
+
+def hashStringToInt(inputString: str) -> int:
+    # Create a SHA-256 hash of the input string
+    hashObject = hashlib.sha256(inputString.encode())
+    # Convert the hash to a hexadecimal string
+    hexDig = hashObject.hexdigest()
+    # Convert the hexadecimal string to an integer
+    return int(hexDig, 16)
 
 
 app = flask.Flask(__name__)
@@ -65,7 +74,7 @@ def get_paginated_products():
 @app.route("/start-session", methods=["POST"])
 def start_session():
     data = request.json
-    thread_id =  int(data["session_id"]) # Must be integer
+    thread_id =  hashStringToInt(data["session_id"]) # Must be integer
     sessions[thread_id] = {
         "agent": MyAgent(thread_id),
         "cart": [],
@@ -78,7 +87,7 @@ def start_session():
 def continue_flow():
     try:
         data = request.json
-        thread_id = int(data["session_id"])
+        thread_id = hashStringToInt(data["session_id"])
         agent = sessions[thread_id]["agent"]
 
         if agent is None:
