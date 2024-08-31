@@ -32,7 +32,7 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/110579401882900256464\">Gagan gautam</a>"
                     ],
-                    "photo_reference": "AXCi2Q7GEV7miH60TQQ6y_Z3XFx_tPAh0m05r5UUH6KiV3jhkqxzOkNv61tg3G-xbUAG65WkquXjASEP5CwXjQ83YyJw8yn-geivCIWyoYYMoBCWkKdXPsOJIwltXSfxIL5bkISTt2zMkUrB2fKGZwvWto0Y74xea-oRVvTsfgG6LTW8E-AH",
+                    "photo_reference": "AXCi2Q4HuzAW5dVLZHpd8WK9n8vpe-BEpNihAgTWMdIUKYWGneKA0wcYN5SPYB_G5zfc-8fVQWaH1tcVnYxK0rJVOKr7kT-YXnqoSOhLB2yFUc3Rswn2b3IRugmN4q3UaBV08U77XgKixBbaZrXqLzhz0VCTXZHM9p_NTXmdiiP4_yX9EPy8",
                     "width": 1920
                 }
             ],
@@ -79,7 +79,7 @@
                     "html_attributions": [
                         "<a href=\"https://maps.google.com/maps/contrib/113030647232148123328\">Omkaralakshmi Kolagani</a>"
                     ],
-                    "photo_reference": "AXCi2Q7Y7gfvWx1xhRjZlg5SpOw6E18vayzDD1UGT8aazWxMMzSruWKmpH5HPr3-AVApNCFhkDxD9XDul3-kPNJSB2prd37kdIj2DCp7Pg38T9J2wSyaROXFuBlV18YUsyCAyKw16PXNhr34W82n6Fn2eHCuBiayLtz078Yr0wnkaKy1PFlJ",
+                    "photo_reference": "AXCi2Q4V0Q3Mo2yZW6qVXrJKZUoK9rgdlXZZAyHb-COkd_fa2JGBs9THn8kabvnVW5Ox0yETLUGGt1Yywo6lsyW23V99eLgjHzB1KtQwl1jS17HVZIolFZHU82UycHQ-w25-FcNjKqkfOX6YZX6u2qQ9hqqVeM10W9w0iWKE0UyMEDkrC-jX",
                     "width": 2448
                 }
             ],
@@ -94,107 +94,14 @@
             "types": [
                 "pharmacy",
                 "drugstore",
+                "food",
                 "health",
                 "store",
-                "food",
                 "point_of_interest",
                 "establishment"
             ],
             "user_ratings_total": 44,
             "vicinity": "Margosa Ave, Green Glen Layout, Bellandur, Bengaluru"
-        },
-        {
-            "business_status": "OPERATIONAL",
-            "geometry": {
-                "location": {
-                    "lat": 12.9303522,
-                    "lng": 77.68476079999999
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 12.93160847989272,
-                        "lng": 77.68616712989272
-                    },
-                    "southwest": {
-                        "lat": 12.92890882010728,
-                        "lng": 77.68346747010727
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
-            "icon_background_color": "#F88181",
-            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
-            "name": "Unique Medicals and General Stores",
-            "place_id": "ChIJ4YdF5s8TrjsROHmSF_2iK5w",
-            "plus_code": {
-                "compound_code": "WMJM+4W Bengaluru, Karnataka",
-                "global_code": "7J4VWMJM+4W"
-            },
-            "rating": 5,
-            "reference": "ChIJ4YdF5s8TrjsROHmSF_2iK5w",
-            "scope": "GOOGLE",
-            "types": [
-                "pharmacy",
-                "health",
-                "store",
-                "point_of_interest",
-                "establishment"
-            ],
-            "user_ratings_total": 1,
-            "vicinity": "Lakshmana reddy building Opp.intel, Dasarahalli Main Rd, next to Saffron Square, Devarabisanahalli, Bengaluru"
-        },
-        {
-            "business_status": "OPERATIONAL",
-            "geometry": {
-                "location": {
-                    "lat": 12.929321,
-                    "lng": 77.6764072
-                },
-                "viewport": {
-                    "northeast": {
-                        "lat": 12.93067552989272,
-                        "lng": 77.67778572989272
-                    },
-                    "southwest": {
-                        "lat": 12.92797587010728,
-                        "lng": 77.67508607010727
-                    }
-                }
-            },
-            "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/pharmacy-71.png",
-            "icon_background_color": "#F88181",
-            "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/pharmacy_pinlet",
-            "name": "City Medical And General Stores",
-            "opening_hours": {
-                "open_now": false
-            },
-            "photos": [
-                {
-                    "height": 3024,
-                    "html_attributions": [
-                        "<a href=\"https://maps.google.com/maps/contrib/111208550961485455888\">safiur rahman</a>"
-                    ],
-                    "photo_reference": "AXCi2Q7EzBB8kGihNiQIJ9OQuXd3aNNlk4c57l7JsQFoTbEXW66pFx86QcieRhX_qrPHbK8ZIBrJvdwVMif7iKmBI_ouM2a1kEUcD0t4fFcEcrZFiaB-XygnX80fjThNHZEfN0_rtR0Ud-wsBFR1dvfDuVyAOv4GippKhpEJ3syqvSYXj3Lb",
-                    "width": 4032
-                }
-            ],
-            "place_id": "ChIJs4zbfJ8TrjsRiEdzeFeG93s",
-            "plus_code": {
-                "compound_code": "WMHG+PH Bengaluru, Karnataka",
-                "global_code": "7J4VWMHG+PH"
-            },
-            "rating": 4.1,
-            "reference": "ChIJs4zbfJ8TrjsRiEdzeFeG93s",
-            "scope": "GOOGLE",
-            "types": [
-                "pharmacy",
-                "health",
-                "store",
-                "point_of_interest",
-                "establishment"
-            ],
-            "user_ratings_total": 67,
-            "vicinity": "Survey No. 93/1, No. 503/5, Gurumurthy Reddy Apartment, B.H, Bellandur Main Rd, Bellandur, Bengaluru"
         }
     ],
     "status": "OK"
