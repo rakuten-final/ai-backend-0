@@ -1,4 +1,5 @@
 from common_imports import *
+from MongoUtils import utils
 
 def get_reason_for_product_offer(input: Dict[str, Any],cc_prod_path:str) -> List[Dict[str, str]]:
     with open(cc_prod_path, 'r') as file:
@@ -36,8 +37,5 @@ def get_reason_for_product_offer(input: Dict[str, Any],cc_prod_path:str) -> List
 
 
 def fetch_product_handler(product_id):
-    MONGO_HOSTED_URL = os.getenv("MONGO_HOSTED_URL")
-    total_url = f"{MONGO_HOSTED_URL}/api/v1/products/{product_id}"
-    # print(total_url)
-    response = requests.get(total_url)
-    return response.json()
+    response = utils.fetchById(product_id)
+    return response
