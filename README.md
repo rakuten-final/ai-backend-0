@@ -1,4 +1,4 @@
-# How to start falsk server
+# How to start flask server
 
 ```
 cd flask_server
